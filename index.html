@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>問卷分配中...</title>
+  <script>
+    window.onload = function() {
+      var surveys = [
+        "https://forms.gle/WuyBK2p2YLTGd9ZV7",  
+        "https://forms.gle/W9TjymP2NtaamMf48",  
+        "https://forms.gle/SJZADWRbrGpfaqjs9", 
+        "https://forms.gle/Ws63HiLt7WMSripB6"   
+      ];
+      
+      var randomIndex = Math.floor(Math.random() * surveys.length);
+      window.location.href = surveys[randomIndex];
+    }
+  </script>
+</head>
+<body>
+  <p>正在隨機分配問卷，請稍候...</p>
+</body>
+</html>
